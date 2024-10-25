@@ -73,6 +73,40 @@
       }
     }
   </script>
+
+<style>
+  .language-selector {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 8px;
+      display: flex;
+      gap: 8px;
+  }
+
+  .language-btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 14px;
+  }
+
+  .language-btn:hover {
+      background-color: #f0f0f0;
+  }
+
+  .language-btn.active {
+      background-color: #009688;
+      color: white;
+  }
+</style>
+
 </head>
 
 <body>
@@ -89,7 +123,46 @@
   </select>
 </div>
 
+<div class="language-selector">
+  <button class="language-btn active" data-lang="en">English</button>
+  <button class="language-btn" data-lang="es">Español</button>
+</div>
 
+<script>
+  // Get the current page language from the URL or default to 'en'
+  const getCurrentLanguage = () => {
+      const path = window.location.pathname;
+      return path.includes('_es.') ? 'es' : 'en';
+  };
+
+  // Initialize the buttons
+  document.addEventListener('DOMContentLoaded', () => {
+      const currentLang = getCurrentLanguage();
+      const buttons = document.querySelectorAll('.language-btn');
+      
+      buttons.forEach(btn => {
+          // Set initial active state
+          if (btn.dataset.lang === currentLang) {
+              btn.classList.add('active');
+          } else {
+              btn.classList.remove('active');
+          }
+
+          // Add click handlers
+          btn.addEventListener('click', () => {
+              const lang = btn.dataset.lang;
+              if (lang !== currentLang) {
+                  // Change to the appropriate language version
+                  const newPath = window.location.pathname.replace(
+                      currentLang === 'en' ? 'index_en.html' : 'index_es.html',
+                      lang === 'en' ? 'index_en.html' : 'index_es.html'
+                  );
+                  window.location.href = newPath;
+              }
+          });
+      });
+  });
+</script>
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
