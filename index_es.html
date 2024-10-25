@@ -53,6 +53,26 @@
   <meta name="robots" content="index, follow" />
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+
+  <script>
+    window.onload = function() {
+      // Check local storage for preferred language
+      const preferredLanguage = localStorage.getItem('language');
+      if (preferredLanguage === 'es') {
+        window.location.href = 'index_es.html'; // Redirect to Spanish page
+      }
+    };
+
+    function switchLanguage(lang) {
+      localStorage.setItem('language', lang); // Store language preference
+      if (lang === 'es') {
+        window.location.href = 'index_es.html'; // Redirect to Spanish page
+      } else {
+        window.location.href = 'index_en.html'; // Redirect to English page
+      }
+    }
+  </script>
 </head>
 
 <body>
