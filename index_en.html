@@ -54,39 +54,85 @@
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 
-
-  <script>
-    window.onload = function() {
-      // Check local storage for preferred language
-      const preferredLanguage = localStorage.getItem('language');
-      if (preferredLanguage === 'es') {
-        window.location.href = 'index_es.html'; // Redirect to Spanish page
-      }
-    };
-
-    function switchLanguage(lang) {
-      localStorage.setItem('language', lang); // Store language preference
-      if (lang === 'es') {
-        window.location.href = 'index_es.html'; // Redirect to Spanish page
-      } else {
-        window.location.href = 'index_en.html'; // Redirect to English page
-      }
-    }
-  </script>
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-
-  <!-- Google Tag Manager (noscript) -->
-  <!-- Language Selector -->
-  <div class="language-selector">
-    <label for="language-select">Choose Language:</label>
-    <select id="language-select" onchange="switchLanguage(this.value)">
-      <option value="en" selected>English</option>
-      <option value="es">Español</option>
-    </select>
-  </div>
+        <style>
+            /* Language Selector Styles */
+            .language-selector {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 1000;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                padding: 8px;
+                display: flex;
+                gap: 8px;
+            }
+    
+            .language-btn {
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: 14px;
+            }
+    
+            .language-btn:hover {
+                background-color: #f0f0f0;
+            }
+    
+            .language-btn.active {
+                background-color: #009688;
+                color: white;
+            }
+    
+            /* Main Page Styles */
+            .full-height {
+                min-height: 100vh;
+            }
+    
+            .overlay {
+                background-color: rgba(0, 0, 0, 0.4);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+    
+            .name-title {
+                padding: 20px;
+            }
+    
+            .section {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+    
+            .page-title {
+                padding: 10px 20px;
+                margin-bottom: 30px;
+            }
+    
+            .card-image img {
+                height: 200px;
+                object-fit: cover;
+            }
+    
+            .social-icons {
+                margin-top: 20px;
+            }
+    
+            .social-icons a {
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <button class="language-btn active" data-lang="en">English</button>
+            <button class="language-btn" data-lang="es">Español</button>
+        </div>
 
 
   <!-- Navigation Menu-->
@@ -862,13 +908,48 @@
     })
   </script>
 
-<script>
-  function switchLanguage(lang) {
-    if (lang === 'es') {
-      window.location.href = 'index_es.html'; // Redirect to Spanish page
-    }
-  }
-</script>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize components
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        // Language Switcher Logic
+        const getCurrentLanguage = () => {
+            const path = window.location.pathname;
+            return path.includes('_es.') ? 'es' : 'en';
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentLang = getCurrentLanguage();
+            const buttons = document.querySelectorAll('.language-btn');
+            
+            buttons.forEach(btn => {
+                if (btn.dataset.lang === currentLang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+
+                btn.addEventListener('click', () => {
+                    const lang = btn.dataset.lang;
+                    if (lang !== currentLang) {
+                        const newPath = window.location.pathname.replace(
+                            currentLang === 'en' ? 'index_en.html' : 'index_es.html',
+                            lang === 'en' ? 'index_en.html' : 'index_es.html'
+                        );
+                        window.location.href = newPath;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+</html>
 
 </html>
