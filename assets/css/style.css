@@ -221,7 +221,7 @@ dt {
 
 ul.side-nav {
   width: 190px;
-  top: 107px;
+  padding-top: 120px;
 }
 
 ul.side-nav li {
