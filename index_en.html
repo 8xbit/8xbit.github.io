@@ -939,7 +939,7 @@
                     const lang = btn.dataset.lang;
                     if (lang !== currentLang) {
                         const newPath = window.location.pathname.replace(
-                            currentLang === 'en' ? 'index_en.html' : 'index_es.html',
+                            currentLang === 'en' ? 'index_en.html' : 'index.html',
                             lang === 'en' ? 'index_en.html' : 'index_es.html'
                         );
                         window.location.href = newPath;
