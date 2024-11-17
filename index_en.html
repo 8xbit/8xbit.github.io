@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
+
+  <!-- Google Tag Manager -->
+
+  <!-- End Google Tag Manager -->
+
   <!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
@@ -13,120 +18,114 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Omar Mourabit | Programador</title>
 
-  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
-  
-  <!-- Custom CSS for Active Navigation Link -->
-  <style>
-    ul.side-nav.fixed li a.active,
-    ul#slide-out li a.active {
-      background-color: #fafafa;
-      border-left: 3px solid #3a99d2;
-    }
-  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <meta name="description"
+    content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+
 </head>
+
 <body>
   <!-- Language Selector -->
   <div class="language-selector">
-    <button class="language-btn active" data-lang="es">Español</button>
-    <button class="language-btn" data-lang="en">English</button>
+    <button class="language-btn active" data-lang="en">English</button>
+    <button class="language-btn" data-lang="es">Español</button>
   </div>
 
   <!-- Navigation Menu-->
-  <!-- Desktop Navigation -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
       <li class="bold">
-        <a aria-label="Navigate to the Home section" href="#intro" class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-home small"></i><span>Inicio</span>
-        </a>
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Acerca de mí</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-person small"></i><span>Acerca de mí</span>
-        </a>
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Habilidades</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-assessment small"></i><span>Habilidades</span>
-        </a>
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Educación</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-school small"></i><span>Educación</span>
-        </a>
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Proyectos</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text">
-          <i class="mdi-av-my-library-books small"></i><span>Proyectos</span>
-        </a>
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contacto</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text">
-          <i class="mdi-content-mail small"></i><span>Contacto</span>
-        </a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Omar's resume in a new tab" href="https://8xbit.github.io/assets/resume/o_mourabit.pdf" target="_blank" class="waves-effect waves-dark teal-text">
-          <i class="mdi-file-folder-open small"></i><span>Currículum</span>
-        </a>
+        <a aria-label="Open Omar's resume in a new tab" href="https://8xbit.github.io/assets/resume/o_mourabit.pdf"
+          target="_blank" class="waves-effect waves-dark teal-text"><i
+            class="mdi-file-folder-open small"></i><span>Currículum</span></a>
       </li>
     </ul>
   </nav>
 
-  <!-- Mobile Navigation -->
+  <!-- Nav class 2 -->
   <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse">
-      <i class="mdi-navigation-menu"></i>
-    </a>
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Omar Mourabit</a>
-      <span class="black-text">Programador</span>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Omar Mourabit</a><span
+        class="black-text">Programador</span>
     </div>
   </nav>
 
+  <!-- Nav class 3 -->
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
       <li class="bold">
-        <a aria-label="Navigate to the Home section" href="#intro" class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-home small"></i><span>Inicio</span>
-        </a>
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Acerca de mí</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-person small"></i><span>Acerca de mí</span>
-        </a>
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Habilidades</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-assessment small"></i><span>Habilidades</span>
-        </a>
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Educación</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-school small"></i><span>Educación</span>
-        </a>
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Proyectos</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text">
-          <i class="mdi-av-my-library-books small"></i><span>Proyectos</span>
-        </a>
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contacto</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text">
-          <i class="mdi-content-mail small"></i><span>Contacto</span>
-        </a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Omar's Resume in a new tab" href="https://8xbit.github.io/assets/resume/o_mourabit.pdf" target="_blank" class="waves-effect waves-dark teal-text">
-          <i class="mdi-file-folder-open small"></i><span>Currículum</span>
-        </a>
+        <a aria-label="Open Omar's Resume in a new tab"
+          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Currículum</span></a>
       </li>
     </ul>
   </nav>
 
-  <!-- Main Content-->
+  <!-- Main Content -->
   <main>
-    <!-- First Section: Intro -->
+    <!-- First Section: Heading lines and image -->
     <section id="intro" class="section scrollspy full-height">
       <div class="overlay"></div>
       <div class="container">
@@ -134,7 +133,7 @@
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
               <h2>Hola, me llamo <span class="teal">Omar Mourabit.</span></h2>
-              <h5 style="color:#fff">Un <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
               <h5>Programador apasionado de desarrollo de aplicaciones multiplataforma.</h5>
             </div>
             <div class="social">
@@ -162,118 +161,403 @@
     <section id="about" class="section scrollspy">
       <h3 class="page-title white-text teal">Acerca de mí</h3>
       <div class="container flow-text">
-        <!-- Your About Me content goes here -->
+        <p>Soy estudiante de Técnico Superior en Programación de Aplicaciones Multiplataforma. Me apasiona resolver problemas y programar,
+           y siempre me esfuerzo por dar el 100% en el trabajo que realizo. Durante mis estudios, 
+           he trabajado con tecnologías como Java, MySQL, PostgreSQL, MongoDB, Android, HTML5 y CSS. 
+           Me entusiasma desarrollar aplicaciones que resuelvan problemas del mundo real y que impacten en la vida cotidiana de los usuarios.</p>
+        <p>Además, tengo una licenciatura en Física, lo que me proporciona un sólido conocimiento en ciencia, lógica y pensamiento crítico.</p>
+        <p>Estoy buscando un nuevo puesto de inicio donde pueda aplicar mis habilidades y seguir creciendo profesionalmente.
+           Me entusiasma la oportunidad de contribuir al crecimiento del equipo y desarrollar mi carrera en un entorno desafiante y estimulante.</p>
       </div>
     </section>
 
     <!-- Third Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text teal">Habilidades</h3>
-      <!-- Content of Skills Section -->
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">LENGUAJES DE PROGRAMACIÓN</h4>
+            <div class="row text-center">
+              
+              <div class="col s4 m2">
+                  <img alt="Java Logo" src="/assets/img/Java-Logo.jpg" class="responsive-img" />  &nbsp;&nbsp;&nbsp; Java&nbsp;&nbsp;&nbsp;  
+              </div> 
+              <div class="col s4 m2">
+                <img alt="C# Logo" src="/assets/img/csharp.png" class="responsive-img" />  &nbsp;&nbsp;&nbsp; C#&nbsp;&nbsp;&nbsp;  
+              </div>
+              <div class="col s4 m2">
+                <img alt="Python Logo" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+              </div>
+              <div class="col s4 m2">
+                <img alt="JavaScript Logo" src="/assets/img/javascript.png" class="responsive-img" />JavaScript 
+              </div>
+              <div class="col s4 m2">
+                <img alt="SQL Logo" src="/assets/img/sql.png" class="responsive-img" /> &nbsp; &nbsp;&nbsp;SQL &nbsp;&nbsp; &nbsp;
+              </div>
+             
+              <div class="col s4 m2">
+                <img alt="PL-SQL Logo" src="/assets/img/plsql.png" class="responsive-img" /> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PL-SQL&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">LENGUAJES DE MARCAS</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="HTML5 Logo" src="/assets/img/html5-300x300.jpg" class="responsive-img" />&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;
+              </div>
+              <div class="col s4 m2">
+                <img alt="CSS3 Logo" src="/assets/img/css3-300x300.jpg" class="responsive-img" />&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;    
+              </div>
+              <div class="col s4 m2">
+                <img alt="XML Logo" src="/assets/img/xml.jpg" class="responsive-img" />&nbsp;&nbsp;&nbsp;XML&nbsp;&nbsp;&nbsp;    
+              </div>
+              <div class="col s4 m2">
+                <img alt="XSLT Logo" src="/assets/img/xslt.png" class="responsive-img" />&nbsp;&nbsp;&nbsp;XSLT&nbsp;&nbsp;&nbsp;   
+              </div>
+              <div class="col s4 m2">
+                <img alt="XQUERY Logo" src="/assets/img/xquery.png" class="responsive-img" />&nbsp;&nbsp;XQUERY&nbsp;&nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">GESTIÓN DE BASE DE DATOS</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="MySQL Logo" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL   
+              </div>
+              <div class="col s4 m2">
+                <img alt="PostgreSQL Logo" src="/assets/img/postgresql-logo.png" class="responsive-img" />PostgreSQL   
+              </div>
+              <div class="col s4 m2">
+                <img alt="MongoDB Logo" src="/assets/img/mongodb.png" class="responsive-img" />MongoDB
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">ENTORNOS DE DESARROLLO</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="Android Studio Logo" src="/assets/img/androidstudio.png" class="responsive-img" />Android Studio      
+              </div>
+              <div class="col s4 m2">
+                <img alt="NetBeans Logo" src="/assets/img/netbeans.png" class="responsive-img" />NetBeans    
+              </div>
+              <div class="col s4 m2">
+                <img alt="PyCharm Logo" src="/assets/img/pycharm.jpg" class="responsive-img" />PyCharm 
+              </div>
+              <div class="col s4 m2">
+                <img alt="Eclipse Logo" src="/assets/img/eclipse.png" class="responsive-img" />Eclipse    
+              </div>
+              <div class="col s4 m2">
+                <img alt="Unity Logo" src="/assets/img/unity.png" class="responsive-img" />&nbsp;&nbsp;Unity&nbsp;&nbsp;       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- Fourth Section: Education -->
     <section id="education" class="section scrollspy">
       <h3 class="page-title white-text teal">Educación</h3>
-      <!-- Content of Education Section -->
+      <div class="container">
+        <div class="row">
+          <!-- Education -->
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="" target="_blank"
+                      class="teal-text hoverline">Universidad Mohamed V</a></span>
+                </p>
+                <p class="brown-text">Rabat, MA</p>
+                <p>
+                  <b>Título: </b>Licenciatura en Física (FR)
+                  <br> <br> 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a
+                      href=""
+                      target="_blank" class="teal-text hoverline">CIFP Tartanga LHII</a></span>
+                </p>
+                <p class="brown-text">Bilbao, País Vasco</p>
+                <p>
+                  <b>Título: </b>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (EN & ES)
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Fifth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Proyectos</h3>
-      <!-- Content of Projects Section -->
+      <div class="container">
+        <div class="row">
+      <!-- : Project  -->
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Football Teams Manager App" src="/assets/img/project-music-player.png"
+                  style="height: 100%; width: 100%" class="activator" />
+              </div>
+              
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">FootBallTeamsManager<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  La idea es desarrollar un programa dedicado a LaLiga donde se puedan gestionar partidos, jugadores, entrenadores, etc.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> JAVA, MySQL, PL-SQL, Eclipse, Git y GitHub, Trello</li>
+                  <li>Registro/inicio de sesión en la aplicación.</li>
+                  <li>Los administradores pueden añadir entrenadores y equipos a la aplicación.</li>
+                  <li>Los entrenadores pueden añadir jugadores a su equipo y organizar</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="View FootballTeamsManager Online" href="https://galvanic-music.herokuapp.com/" target="_blank"
+                    data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="View FootballTeamsManager GitHub Repository"
+                    href="https://github.com/zzzzzzzz" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- : Project  -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Web Dinámica de Videojuegos" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%"
+                  class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Web Dinámica de Videojuegos <i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Desarrollo de Página Web Dinámica de Videojuegos 
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b>HTML, CSS, JavaScript, PHP, XQuery, XML, VS Code</li>
+                  <li>Re.</li>
+                  <li>P</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="View Web Dinámica de Videojuegos Online" href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="View Web Dinámica de Videojuegos GitHub Repository" href="https://github.com/zzzzzz"
+                    target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+   <!-- : Project  -->
+   <div class="col s12 m6 l4">
+    <div class="card medium">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img alt="Quiz Web-App" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%"
+          class="activator" />
+      </div>
+      <div class="card-content">
+        <span class="card-title activator teal-text hoverline">Quiz Web-App<i
+            class="mdi-navigation-more-vert right"></i></span>
+        <p>
+          Android App: PodCats App 
+        </p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text"><small>Accomplishments</small><i
+            class="mdi-navigation-close right"></i></span>
+        <ul>
+          <li><b>Tools:</b> Android Studio, Java, SQLite</li>
+          <li>R.</li>
+          <li>P</li>
+        </ul>
+        <div class="card-action">
+          <a aria-label="View Quiz Web-App Online" href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
+            data-tooltip="View Online"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-external-link"></i></a>
+          <a aria-label="View Quiz Web-App GitHub Repository" href="https://github.com/zzzzzz"
+            target="_blank" data-position="top"
+            data-tooltip="View Source"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+        </div>
+      </div>
     </section>
 
     <!-- Sixth Section: Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text teal">Contacto</h3>
-      <!-- Content of Contact Section -->
+      <div class="container">
+        <p>
+          <a aria-label="Call Omar" data-position="top" data-tooltip="Call Omar"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i></a>
+          <a aria-label="Call Omar">+34661015851</a>
+        </p>
+        <p>
+          <a aria-label="Email Omar" href="mailto:multitartanga@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Omar" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i></a>
+          <a aria-label="Email Omar" href="mailto:multitartanga@gmail.com" class="hoverline">multitartanga@gmail.com</a>
+        </p>
+        <p>
+          <a aria-label="View Omar on GitHub" href="https://github.com/8xbit" target="_blank" data-position="top"
+            data-tooltip="View Omar on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+          <a aria-label="Omar on Github" href="https://github.com/8xbit" class="hoverline"
+            target="_blank">https://github.com/8xbit/</a>
+        </p>
+        <p>
+          <a aria-label="View Omar on LinkedIn" href="https://linkedin.com/in/8xbit" target="_blank"
+            data-position="top" data-tooltip="View Omar on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i></a>
+          <a aria-label="Omar on LinkedIn" href="https://linkedin.com/in/8xbit"
+            class="hoverline" target="_blank">https://linkedin.com/in/8xbit</a>
+        </p>
+      </div>
     </section>
   </main>
 
-  <!-- Typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Java Developer", "Android Developer", "Fast Learner", "Problem Solver"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
+  <!-- JavaScript to Handle Active State -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Select all the navigation links within the sidebar
+      const menuItems = document.querySelectorAll('.side-nav.fixed .bold a');
+
+      // Add click event listener to each menu item link
+      menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+          // Remove the 'active' class from all menu items
+          menuItems.forEach(i => i.parentElement.classList.remove('active'));
+
+          // Add the 'active' class to the parent <li> of the clicked link
+          this.parentElement.classList.add('active');
+        });
+      });
     });
   </script>
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
   <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
   <script>
     // Materialize - Initializers
     $(document).ready(function () {
-      // Initialize ScrollSpy with scrollOffset
-      $(".scrollspy").scrollSpy({
-        scrollOffset: 64 // Adjust this value based on your navbar height
-      });
-
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks
-      });
-
-      // For desktop navigation
-      $('ul.side-nav.fixed li a').click(function () {
-        $('ul.side-nav.fixed li a').removeClass('active');
-        $(this).addClass('active');
-      });
-
-      // For mobile navigation
-      $('ul#slide-out li a').click(function () {
-        $('ul#slide-out li a').removeClass('active');
-        $(this).addClass('active');
+      $('.scrollspy').scrollSpy();
+      $('.button-collapse').sideNav({
+        menuWidth: 190,
+        edge: 'left',
+        closeOnClick: true
       });
     });
   </script>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    // Initialize Materialize components
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems);
+<script>
+  $(document).ready(function() {
+    // Initialize ScrollSpy with scrollOffset
+    $('.scrollspy').scrollSpy({
+      scrollOffset: 64 // Set this to the height of your fixed navbar
     });
 
-    // Language Switcher Logic
-    const getCurrentLanguage = () => {
-      const path = window.location.pathname;
-      return path.includes('_es.') ? 'es' : 'en';
-    };
+    // Initialize side navigation (mobile)
+    $(".button-collapse").sideNav({
+      menuWidth: 190,
+      edge: "left",
+      closeOnClick: true
+    });
+  });
+</script>
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const currentLang = getCurrentLanguage();
-      const buttons = document.querySelectorAll('.language-btn');
-
-      buttons.forEach(btn => {
-        if (btn.dataset.lang === currentLang) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
-
-        btn.addEventListener('click', () => {
-          const lang = btn.dataset.lang;
-          if (lang !== currentLang) {
-            const newPath = window.location.pathname.replace(
-              currentLang === 'en' ? 'index_en.html' : 'index_es.html',
-              lang === 'en' ? 'index_en.html' : 'index_es.html'
-            );
-            window.location.href = newPath;
-          }
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize components
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
         });
-      });
-    });
-  </script>
+
+        // Language Switcher Logic
+        const getCurrentLanguage = () => {
+            const path = window.location.pathname;
+            return path.includes('_es.') ? 'es' : 'en';
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentLang = getCurrentLanguage();
+            const buttons = document.querySelectorAll('.language-btn');
+            
+            buttons.forEach(btn => {
+                if (btn.dataset.lang === currentLang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+
+                btn.addEventListener('click', () => {
+                    const lang = btn.dataset.lang;
+                    if (lang !== currentLang) {
+                        const newPath = window.location.pathname.replace(
+                            currentLang === 'en' ? 'index_en.html' : 'index.html',
+                            lang === 'en' ? 'index_en.html' : 'index_es.html'
+                        );
+                        window.location.href = newPath;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
